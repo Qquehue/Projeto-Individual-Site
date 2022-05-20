@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Shadow Card Maker | Cadastro</title>
+    <title>ShadowRealms | Cadastro</title>
 
 
     <script src="./js/funcoes.js"></script>
@@ -25,7 +25,7 @@
     <!--header inicio-->
     <div class="header">
         <div class="container">
-            <h1 class="titulo">Shadow Card Maker Yu-gi-oh!</h1>
+            <h1 class="titulo">ShadowRealms Yu-gi-oh!</h1>
             <ul class="navbar">
                 <li>
                     <a href="./index.html">
@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./simulador.html">Gerador de Cards</a>
+                    <a href="./simulador.html">Sobre o Fórum</a>
                 </li>
                 <li>|</li>
                 <li>
@@ -64,11 +64,20 @@
                          Assim que inserir vá para o script abaixo.
                      -->
 
-                    <span class="tipo_campo">Nome:</span>
-                    <input id="nome_input" type="text" placeholder="Seu nome">
+                    <span class="tipo_campo">Nome de Usuário:</span>
+                    <input id="nome_input" type="text" placeholder="Player">
+
+                    <span class="tipo_campo">Tipo de Usuário</span>
+                    <select class="combo_tipo" id="comb_tipo">
+                        <option value="0">--Selecione--</option>
+                        <option value="casual">Jogador Casual</option>
+                        <option value="competitivo">Jogador Competitivo</option>
+                        <option value="conteudo">Criador de Conteúdo</option>
+                        <option value="anime">Fã do Anime</option>
+                    </select>
 
                     <span class="tipo_campo">E-mail:</span>
-                    <input id="email_input" type="text" placeholder="meuemail@provedor.com">
+                    <input id="email_input" type="text" placeholder="Player@email.com">
 
                     <span class="tipo_campo">Senha:</span>
                     <input id="senha_input" type="password" placeholder="******">
@@ -76,11 +85,14 @@
                     <span class="tipo_campo">Confirmação da Senha:</span>
                     <input id="confirmacao_senha_input" type="password" placeholder="******">
 
+                    <span class="tipo_campo">Descrição do Usuário</span>
+                    <input id="desc_input" type="text" placeholder="Sou fã do TCG">
+
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
 
                 </div>
                 <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
+                    <img src="./assets/mokeymokey.gif" id="loading-gif">
                 </div>
 
                 <div id="div_erros_login">
