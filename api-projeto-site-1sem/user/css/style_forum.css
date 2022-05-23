@@ -1,0 +1,150 @@
+/* global */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: white;
+}
+
+a{
+    color: rgb(73, 73, 255);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+/* HOME */
+
+.container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum{
+    margin-top: 20px;
+}
+
+.subforum_row{
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum_coluna{
+    padding: 10px;
+    margin: 4px;
+    border-radius: 5px;
+    background-color: #252525;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum_icone{
+    font-size: 45px;
+}
+
+/* NavBar */
+
+header{
+    margin-inline: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navegacao{
+    background-color: #000;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.nav_lista{
+    list-style: none;
+    overflow: hidden;
+}
+.nav_iten a{
+    float: right;
+    display: block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.nav_iten a:hover{
+    background-color: rgb(122, 30, 207);
+    box-shadow: 1px 2px 3px #000;
+}
+
+.fechar_lista{
+    font-size: 60px;
+    float: left;
+    cursor: pointer;
+}
+
+.fechar{
+    display: none;
+}
+
+.icone_barra{
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.brand{
+    font-size: 60px;
+    display: inline-block;
+}
+
+/* Barra de Persquisa */
+
+.barra_pesquisa{
+    border: solid 1px blueviolet;
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px blueviolet;
+}
+
+.barra_pesquisa select{
+    padding: 10px;
+}
+
+.barra_pesquisa input{
+    padding: 10px;
+}
+
+.barra_pesquisa button{
+    padding: 10px;
+    background-color: white;
+    color: #000;
+}
+
+.barra_pesquisa button:hover{
+    background-color: #252525;
+    color: white;
+    box-shadow: 1px 2px 3px blueviolet;
+}
