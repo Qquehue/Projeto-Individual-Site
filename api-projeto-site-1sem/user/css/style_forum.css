@@ -27,7 +27,7 @@ h1{
 
 .container{
     margin: 20px;
-    padding: 20px;
+    padding: 5px;
 }
 
 .subforum{
@@ -91,7 +91,7 @@ header{
 }
 
 .nav_iten a:hover{
-    background-color: rgb(122, 30, 207);
+    background-color: #7a1ecf;
     box-shadow: 1px 2px 3px #000;
 }
 
@@ -147,4 +147,75 @@ header{
     background-color: #252525;
     color: white;
     box-shadow: 1px 2px 3px blueviolet;
+}
+
+.forum_info{
+    padding: 20px;
+    background-color: #252525;
+}
+
+.graf{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #7a1ecf;
+    display: block;
+    text-align: center;
+}
+
+/* STATUS FORUM */
+
+.table_head{
+    display: flex;
+}
+
+.table_head div{
+   padding: 5px;
+   margin: 2px;
+   background-color: #252525;
+   font-weight: bold; 
+}
+
+.table_head .status{
+    flex: 20%;
+}
+
+.table_head .assunto{
+    flex: 60%;
+}
+
+.table_head .respostas{
+    flex: 20%;
+}
+
+/* Table body */
+
+.table_row{
+    display: flex;
+}
+
+.table_row .status, .table_row .assunto, .table_row .respostas{
+    padding: 5px;
+    margin: 2px;
+    background-color: #252525;
+}
+
+.table_row .status{
+    flex: 20%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table_row .assunto{
+    flex: 60%;
+}
+
+.table_row .respostas{
+    flex: 20%;
 }
