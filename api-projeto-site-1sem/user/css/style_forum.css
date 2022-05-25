@@ -7,7 +7,7 @@
 html{
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.76);
     color: white;
 }
 
@@ -68,7 +68,7 @@ header{
 }
 
 .navegacao{
-    background-color: #000;
+    background-color: #252525;
     padding: 10px;
     width: 65%;
     display: inline-block;
@@ -127,6 +127,7 @@ header{
     display: flex;
     justify-content: center;
     box-shadow: 1px 2px 3px blueviolet;
+    background-color: #252525;
 }
 
 .barra_pesquisa select{
