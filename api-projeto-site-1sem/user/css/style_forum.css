@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url("../../public/assets/imgs/bg_galaxy.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
 html{
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
@@ -32,6 +38,9 @@ h1{
 
 .subforum{
     margin-top: 20px;
+    background-color: #252525bd;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .subforum_row{
@@ -42,8 +51,6 @@ h1{
 .subforum_coluna{
     padding: 10px;
     margin: 4px;
-    border-radius: 5px;
-    background-color: #252525;
 }
 
 .center{
@@ -68,7 +75,7 @@ header{
 }
 
 .navegacao{
-    background-color: #252525;
+    background-color: #0000003a;
     padding: 10px;
     width: 65%;
     display: inline-block;
@@ -121,13 +128,10 @@ header{
 /* Barra de Persquisa */
 
 .barra_pesquisa{
-    border: solid 1px blueviolet;
     margin-top: 20px;
-    padding: 40px;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    box-shadow: 1px 2px 3px blueviolet;
-    background-color: #252525;
 }
 
 .barra_pesquisa select{
@@ -177,9 +181,9 @@ footer{
 }
 
 .table_head div{
-   padding: 5px;
+   padding: 20px;
    margin: 2px;
-   background-color: #252525;
+   background-color: #252525bd;
    font-weight: bold; 
 }
 
@@ -202,7 +206,7 @@ footer{
 }
 
 .table_row .status, .table_row .assunto, .table_row .respostas{
-    padding: 5px;
+    padding: 20px;
     margin: 2px;
     background-color: #252525;
 }

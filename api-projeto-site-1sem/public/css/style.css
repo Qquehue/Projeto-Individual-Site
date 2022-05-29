@@ -1,60 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Barlow', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: black;
-}
-
-.container {
-  width: 80%;
-  margin: auto;
-  display: flex;
-}
-
-.header {
-  border-bottom: 3px solid #32b9cd;
-}
-
-.header .container {
-  justify-content: space-between;
-}
-
-.header a {
-  text-decoration: none;
-  color: #e3b062;
-}
-
-.agora {
-  font-weight: 800;
-}
-
-.navbar {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
-  color: #e3b062;
-}
-
-
-.titulo {
-  color: #32b9cd;
-  width: fit-content;
-  font-weight: 500;
-}
-
-
 /* BANNER */
 
 .banner {
   height: fit-content;
   padding: 40px 0;
-  color: white;
-  background-image: url(".././assets/imgs/background.jpg");
-  background-size: cover;
+  color: #e70000;
+  
 }
 
 .banner .container {
@@ -83,7 +33,6 @@ body {
 /* missao visao valores */
 
 .social {
-  background-color: #e5e5e5;
   display: flex;
 }
 
@@ -122,8 +71,8 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: #32b9cd;
-  height: 150px;
+  height: 100px;
+  width: 100%;
   color: #fff;
   display: flex;
   font-size: 15px;
@@ -137,12 +86,13 @@ body {
 /* LOGIN */
 
 .banner .container .card {
-  background-color: #e5e5e5;
+  margin-top: 10%;
+  background-color: #00000080;
   height: fit-content;
   width: 400px;
   display: flex;
   flex-direction: column;
-  color: palevioletred;
+  color: #e70000;
   align-items: center;
   border-radius: 4px;
 }
@@ -177,12 +127,12 @@ button {
 
 .card_erro {
   display: none;
-  background-color: #fff;
+  background-color: #00000080;
   color: black;
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #e6005a 3px solid;
+  border: #e70000 3px solid;
   padding: 10px;
   margin-right: 10%;
 }
@@ -202,6 +152,13 @@ button {
   flex-direction: column;
 }
 
+.combo_tipo{
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #32b9cd;
+  border-radius: 10px;
+}
+
 input {
   margin-bottom: 10px;
   border: 2px solid #32b9cd;
@@ -218,7 +175,7 @@ input {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e6005a;
+  background-color: #e70000;
   width: 120px;
   align-self: center;
   margin-top: 5px;
@@ -296,23 +253,28 @@ input {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color: #e6005a;
+  background-color: #e70000;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
+button:hover{
+  background-color: #161618;
+  box-shadow: 3px 2px 1px #e70000;
+}
+
 .btn-nav-white {
   width: 40%;
   background-color: white;
-  border: 3px solid #e6005a;
+  border: 3px solid #e70000;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: #e6005a;
+  color: #e70000;
   padding: 0;
   margin: 0;
 }
