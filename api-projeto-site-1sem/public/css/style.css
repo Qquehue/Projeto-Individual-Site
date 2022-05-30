@@ -301,9 +301,20 @@ button:hover{
 /* pagina extra - simulador */
 .simulador {
   color: white;
-
 }
 
 .simulador .container {
-  flex-direction: column
+  flex-direction: column;
+}
+
+.fundo_sobre{
+  background-color: #252525bd;
+  margin-top: 11%;
+  padding: 1%;
+  border-radius: 2%;
+}
+
+.fundo_sobre p {
+  margin-top: 3%;
+  font-size: 20px;
 }
