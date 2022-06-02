@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_contador.css">
+    <link rel="stylesheet" href="css/style_forum.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+<header>
+    <div class="navbar">
+
+        <nav class="navegacao fechar" id="navegacao">
+            <ul class="nav_lista">
+                <span class="fechar_lista" onclick="esconderBarra()">X</span>
+                <li class="nav_iten">
+                    <a href="#">Home</a>
+                </li>
+                <li class="nav_iten">
+                    <a href="status_forum.html">Forum</a>
+                </li>
+                <li class="nav_iten">
+                    <a href="">Meu Perfil</a>
+                </li>
+
+            </ul>
+
+        </nav>
+        <a href="#" class="icone_barra" id="iconeBarra" onclick="mostrarBarra()">=></a>
+        <div class="brand">ConstellarRealms</div>
+    </div>
+</header>
+
+<body>
+    <div class="jogadores">
+        <div class="player">
+            Player1
+        </div>
+        <div class="player">
+            Player2
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="formato">
+            <div class="fundo">
+                <span class="numero" id="NumeroP1">8000</span>
+            </div>
+        </div>
+
+        <div class="formato">
+            <div class="fundo">
+                <span class="numero" id="NumeroP2">8000</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form">
+        <div class="dados">
+            <select id="sel_player" class="select_player">
+                <option value="1">Player1</option>
+                <option value="2">Player2</option>
+            </select>
+            <input type="number" id="ipt_valor"><br>
+        </div>
+        <div class="but">
+            <button onclick="dano()" class="red">-</button>
+            <button onclick="cura()" class="green">+</button><br>
+        </div>
+        <div class="historico">
+            <span class="titulo_registro">Histórico</span>
+            <span class="registro"></span>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <span>São Paulo Futebol Clube</span>
+</footer>
+
+<script src="js/script_forum.js"></script>
+
+<script>
+    var pv1 = 8000;
+    var pv2 = 8000;
+    var hist1 = [];
+    var hist2 = [];
+
+    async function dano(params) {
+        var dano = 0;
+        var valor = Number(ipt_valor.value);
+
+        for (let logic = pv1; logic > pv1-valor; logic--) {
+
+            await new Promise(obtenha => {
+                dano++
+                NumeroP1.innerHTML = `${pv1-dano}`;
+                setTimeout(obtenha, 1/1000)
+            })
+        }
+        hist1.push(pv1);
+    }
+
+
+</script>
+
+</html>
