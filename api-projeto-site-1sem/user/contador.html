@@ -37,7 +37,7 @@
     </div>
 </header>
 
-<body>
+<body class="body_cont">
     <div class="jogadores">
         <div class="player">
             Player1
@@ -73,41 +73,22 @@
             <button onclick="dano()" class="red">-</button>
             <button onclick="cura()" class="green">+</button><br>
         </div>
+    </div>
+    <div class="conter_registro">
+        <div class="titulo_registro">Histórico</div>
         <div class="historico">
-            <span class="titulo_registro">Histórico</span>
-            <span class="registro"></span>
+            <span class="reg1">8000</span>
+            <span class="reg2">8000</span>
         </div>
     </div>
 
 </body>
 <footer>
-    <span>São Paulo Futebol Clube</span>
+    <img src="../public/assets/imgs/ygologo.png">
+    <img src="../public/assets/imgs/konamilogo.png"></img>
 </footer>
 
 <script src="js/script_forum.js"></script>
-
-<script>
-    var pv1 = 8000;
-    var pv2 = 8000;
-    var hist1 = [];
-    var hist2 = [];
-
-    async function dano(params) {
-        var dano = 0;
-        var valor = Number(ipt_valor.value);
-
-        for (let logic = pv1; logic > pv1-valor; logic--) {
-
-            await new Promise(obtenha => {
-                dano++
-                NumeroP1.innerHTML = `${pv1-dano}`;
-                setTimeout(obtenha, 1/1000)
-            })
-        }
-        hist1.push(pv1);
-    }
-
-
-</script>
+<script src="js/script_pv.js"></script>
 
 </html>

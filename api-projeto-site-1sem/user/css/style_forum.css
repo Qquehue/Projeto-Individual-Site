@@ -167,13 +167,15 @@ header{
 /* Footer */
 
 footer{
-    margin-top: 20px;
     padding: 20px;
-    background-color: #7a1ecf;
-    display: block;
-    text-align: center;
+    background-color: #7a1fcf;
+    display: flex;
+    justify-content: space-between;
 }
 
+footer img{
+    height: 10vh;
+}
 /* STATUS FORUM */
 
 .table_head{
