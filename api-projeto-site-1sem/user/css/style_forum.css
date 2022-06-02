@@ -178,6 +178,10 @@ footer img{
 }
 /* STATUS FORUM */
 
+.body_status{
+    background-image: url('../../public/assets/imgs/bg_magician.jpeg');
+}
+
 .table_head{
     display: flex;
 }
