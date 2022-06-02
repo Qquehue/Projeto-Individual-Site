@@ -5,8 +5,8 @@
 }
 
 body{
-    background-image: url("../../public/assets/imgs/bg_galaxy.jpg");
-    background-size: cover;
+    background-image: url("https://static.wikia.nocookie.net/cb24bff1-b098-4632-81be-cd281164d1ff");
+    background-size: contain;
     margin: 0;
 }
 
@@ -179,7 +179,8 @@ footer img{
 /* STATUS FORUM */
 
 .body_status{
-    background-image: url('../../public/assets/imgs/bg_magician.jpeg');
+    background-image: url('../../public/assets/imgs/bg_galaxy.jpg');
+    background-size: contain;
 }
 
 .table_head{

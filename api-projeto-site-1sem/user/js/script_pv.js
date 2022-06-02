@@ -19,7 +19,6 @@ async function dano(params) {
         }
         hist1.push(pv1 - dano);
         pv1 = hist1[hist1.length - 1];
-        // reg1.innerHTML = 
 
     }
     else if (sel_player.value == '2') {
@@ -46,7 +45,6 @@ async function cura() {
     var pv2 = hist2[hist2.length-1];
 
     if (sel_player.value == '1') {
-
         for (let logic = pv1; logic < pv1 + valor; logic++) {
 
             await new Promise(obtenha => {

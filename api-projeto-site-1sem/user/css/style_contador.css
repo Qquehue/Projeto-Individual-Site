@@ -6,7 +6,8 @@
 .body_cont{
     margin: 0;
     background-image: url("../../public/assets/imgs/bg_satellar.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .jogadores{
