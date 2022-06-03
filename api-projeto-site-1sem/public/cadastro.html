@@ -88,9 +88,6 @@
                     <span class="tipo_campo">Confirmação da Senha:</span>
                     <input id="confirmacao_senha_input" type="password" placeholder="******">
 
-                    <span class="tipo_campo">Descrição do Usuário</span>
-                    <input id="desc_input" type="text" placeholder="Sou fã do TCG">
-
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
 
                 </div>
@@ -128,9 +125,8 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-        var descVar = desc_input.value;
 
-        if (nomeVar == "" || tipoVar == "0" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || descVar == '') {
+        if (nomeVar == "" || tipoVar == "0" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
 
@@ -171,6 +167,7 @@
                 // crie um atributo que recebe o valor recuperado aqui
                 // Agora vá para o arquivo routes/usuario.js
                 nomeServer: nomeVar,
+                tipoServer: tipoVar,
                 emailServer: emailVar,
                 senhaServer: senhaVar
             })
