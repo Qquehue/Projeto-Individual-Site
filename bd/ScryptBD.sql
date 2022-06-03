@@ -1,31 +1,28 @@
-create database ShadowRealms;
-use ShadowRealms;
+create database Constellar;
+use Constellar;
 
 create table Usuario(
 idUsuario int primary key auto_increment,
 nome varchar(45),
-email varchar(45),
-tipo varchar(11),
-descricao text
-);
-create table Forum(
-idDiscussao int primary key auto_increment,
-titulo varchar (45),
-Discussao text,
-statusDisc char(7),
 tipo varchar(45),
-URL varchar(100),
+email varchar(45),
+senha varchar(32)
+);
+
+	
+create table Base(
+idBase int primary key auto_increment,
+titulo varchar (45),
 fkUsuario int,
-registroDisc datetime default current_timestamp,
 foreign key (fkUsuario) references Usuario(idUsuario)
 );
-create table respostas (
-idResposta int auto_increment,
-fkUsuario int,
-foreign key (fkUsuario) references Usuario (idUsuario),
-fkForum int,
-foreign key (fkForum) references Forum (idDiscussao),
-primary key (idResposta, fkUsuario, fkForum),
+
+create table Itens (
+idItem int auto_increment,
+fkBase int,
+foreign key (fkBase) references Base (idBase),
+primary key (idIten, fkBase),
+URL varchar(100),
 registro datetime default current_timestamp,
 descricao text
 );

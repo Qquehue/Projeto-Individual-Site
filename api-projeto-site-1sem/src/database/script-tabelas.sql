@@ -3,8 +3,8 @@
 -- ter este arquivo aqui não significa que a tabela em seu BD estará como abaixo!
 
 /* para workbench - local - desenvolvimento */
-create database ConstellarYGO;
-use ConstellarYGO;
+create database constellar;
+use constellar;
 
 create table Usuario(
 idUsuario int primary key auto_increment,

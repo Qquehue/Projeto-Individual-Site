@@ -116,7 +116,7 @@
 
 <script>
     function cadastrar() {
-        aguardar();
+        // aguardar();
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
@@ -130,32 +130,32 @@
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Preencha todos os campos para prosseguir!";
 
-            finalizarAguardar();
+            // finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         if (emailVar.indexOf("@") == -1 || emailVar.indexOf(".com") == -1) {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "Ops, e-mail inválido! Verifique e tente novamente.";
-            finalizarAguardar();
+            // finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         if (senhaVar != confirmacaoSenhaVar) {
             cardErro.style.display = "block"
-            mensagem_erro.innerHTML = "As senhas inseridas devem ser iguais para prosseguir!";
-            finalizarAguardar();
+            alert("As senhas inseridas devem ser iguais para prosseguir!");
+            // finalizarAguardar();
             return false;
         }
-        else {
-            setInterval(sumirMensagem, 5000)
-        }
+        // else {
+        //     setInterval(sumirMensagem, 5000)
+        // }
 
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
@@ -180,20 +180,20 @@
                 mensagem_erro.innerHTML = "Cadastro realizado com sucesso!";
                 window.location = "login.html";
                 limparFormulario();
-                finalizarAguardar();
+                // finalizarAguardar();
             } else {
                 throw ("Houve um erro ao tentar realizar o cadastro!");
             }
         }).catch(function (resposta) {
             console.log(`#ERRO: ${resposta}`);
-            finalizarAguardar();
+            // finalizarAguardar();
         });
 
         return false;
     }
 
-    function sumirMensagem() {
-        cardErro.style.display = "none"
-    }
+    // function sumirMensagem() {
+    //     cardErro.style.display = "none"
+    // }
 
 </script>
