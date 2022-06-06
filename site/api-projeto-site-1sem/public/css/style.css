@@ -3,7 +3,33 @@
 .banner {
   height: fit-content;
   padding: 40px 0;
+  color: black;
+}
+
+.espaco{
+  height: 10vh;
+}
+
+.frases{
+  margin: 5%;
+  font-size: 7vh;
+  font-weight: bold;
+}
+
+.ygo{
   color: #39ff14;
+  background-color: #252525bd;
+  padding: 3%;
+  width: 90%;
+}
+
+.frases div{
+  margin-top: 8vh;
+}
+
+.box{
+  color: black;
+  font-size: 5vh;
 }
 
 .banner .container {
