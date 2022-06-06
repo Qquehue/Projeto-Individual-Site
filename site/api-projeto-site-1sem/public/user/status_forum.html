@@ -4,52 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/style_forum.css">
+    <link rel="icon" href="../assets/imgs/mokeymokey.png">
     <script src="js/script_forum.js"></script>
-    <title>ConstellarRealms Forum</title>
+    <title>ConstellarYGO | Status</title>
 </head>
-<body class="body_status">
-    <header>
-        <div class="navbar">
+<header>
+    <div class="navbar">
 
-            <nav class="navegacao fechar" id="navegacao">
-                <ul class="nav_lista">
-                    <span class="fechar_lista" onclick="esconderBarra()">X</span>
-                    <li class="nav_iten">
-                        <a href="index_forum.html">Home</a>
-                    </li>
-                    <li class="nav_iten">
-                        <a href="#">Forum</a>
-                    </li>
-                    <li class="nav_iten">
-                        <a href="">Meu Perfil</a>
-                    </li>
-                    <li class="nav_iten">
-                        <a href="contador.html">Contador</a>
-                    </li>
+        <nav class="navegacao fechar" id="navegacao">
+            <ul class="nav_lista">
+                <span class="fechar_lista" onclick="esconderBarra()"><span class="material-icons">
+                    close
+                    </span></span>
+            <li class="nav_iten">
+                <a onclick="limparSessao()">Sair</a>
+            </li>
+            <li class="nav_iten">
+                <a href="index_forum.html">Home</a>
+            </li>
+            <li class="nav_iten">
+                <a href="profile.html">Meu Perfil</a>
+            </li>
+            <li class="nav_iten">
+                <a href="contador.html">Duelo</a>
+            </li>
 
-                </ul>
+            </ul>
 
-            </nav>
-            <a href="#" class="icone_barra" id="iconeBarra" onclick="mostrarBarra()">=></a>
-            <div class="brand">ConstellarRealms</div>
-        </div>
+        </nav>
+        <a href="#" class="icone_barra" id="iconeBarra" onclick="mostrarBarra()"><span class="material-icons">
+            view_week
+            </span></a>
+        <div class="brand"></div>
+    </div>
 
-        <!-- Barra de pesquisa -->
-        
-        <div class="barra_pesquisa">
-            <div>
-                <select>
-                    <option value="tudo">Padrão</option>
-                    <option value="titulos">Titulos</option>
-                    <option value="descricao">Descrição</option>
-                </select>
-                <input type="text" placeholder="Pesquise algo aqui">
-                <button onclick="">Pesquisar</button>
-            </div>
-        </div>
-
-    </header>
+</header>
+<body class="body_status" onload="validarSessao()">
 
     <div class="container">
 
@@ -153,8 +146,11 @@
     </div>
 
     <footer>
-        <img src="../public/assets/imgs/ygologo.png">
-        <img src="../public/assets/imgs/konamilogo.png">
+        <img src="../assets/imgs/ygologo.png">
+        <img src="../assets/imgs/konamilogo.png">
     </footer>
 </body>
+    <script src="../js/funcoes.js"></script>
+
+
 </html>

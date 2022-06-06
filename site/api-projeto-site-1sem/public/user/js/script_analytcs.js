@@ -7,13 +7,13 @@ function parametro() {
         if (comparar1>8000) {
             status_p1.innerHTML = `<span style="color: blue;">Esqueça Tudo</span>`
         }
-        else if (comparar1<7000) {
+        else if (comparar1<7000 && comparar1>=4000) {
             status_p1.innerHTML = `<span style="color: #39ff14;">Tranquilo</span>`
         }
-        else if (comparar1<4000) {
+        else if (comparar1<4000 && comparar1>=2000) {
             status_p1.innerHTML = `<span style="color: yellow;">Sob Controle</span>`
         }
-        else if (comparar1<2000) {
+        else if (comparar1<2000 && comparar1>=500) {
             status_p1.innerHTML = `<span style="color: orange;">Cuidado</span>`
         }
         else if (comparar1<500) {
@@ -24,13 +24,13 @@ function parametro() {
         if (comparar2>8000) {
             status_p2.innerHTML = `<span style="color: blue;">Esqueça Tudo</span>`
         }
-        else if (comparar2<7000) {
+        else if (comparar2<7000 && comparar2>=4000) {
             status_p2.innerHTML = `<span style="color: #39ff14;">Tranquilo</span>`
         }
-        else if (comparar2<4000) {
+        else if (comparar2<4000 && comparar2>=2000) {
             status_p2.innerHTML = `<span style="color: yellow;">Sob Controle</span>`
         }
-        else if (comparar2<2000) {
+        else if (comparar2<2000 && comparar2>=500) {
             status_p2.innerHTML = `<span style="color: orange;">Cuidado</span>`
         }
         else if (comparar2<500) {

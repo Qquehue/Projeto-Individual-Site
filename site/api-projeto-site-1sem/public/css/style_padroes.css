@@ -35,10 +35,9 @@ body {
 }
 
 .header {
-  border-bottom: 3px solid #e70000;
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: #00000042;
 }
 
 .header .container {
@@ -47,7 +46,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e70000;
+  color: #39ff14;
 }
 
 .agora {
@@ -60,12 +59,12 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e70000;
+  color: #39ff14;
 }
 
 
 .titulo {
-  color: #e70000;
+  color: #39ff14;
   width: fit-content;
   font-weight: 500;
 }
@@ -74,11 +73,28 @@ body {
 
 footer{
   padding: 20px;
-  background-color: #7a1fcf;
+  background-color:#252525bd;
   display: flex;
   justify-content: space-between;
+  bottom: 0;
+  width: 96.3vw;
 }
 
 footer img{
   height: 10vh;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #00000042;
+}
+
+::-webkit-scrollbar-thumb{
+  width: 10px;
+  background-color: #39ff14;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button{
+  display: none;
 }

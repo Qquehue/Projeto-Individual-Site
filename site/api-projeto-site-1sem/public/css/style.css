@@ -3,8 +3,7 @@
 .banner {
   height: fit-content;
   padding: 40px 0;
-  color: #e70000;
-  
+  color: #39ff14;
 }
 
 .banner .container {
@@ -30,78 +29,6 @@
   font-weight: 800;
 }
 
-/* missao visao valores */
-
-.social {
-  display: flex;
-}
-
-.social .container{
-  justify-content: center;
-}
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-}
-
-.social p {
-  text-align: center;
-}
-
-.box {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.box {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-/* LOGIN */
-
-.banner .container .card {
-  margin-top: 10%;
-  background-color: #00000080;
-  height: fit-content;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  color: #e70000;
-  align-items: center;
-  border-radius: 4px;
-}
-
-.card {
-  display: flex;
-  justify-content: space-around;
-}
-
-.card h2 {
-  font-size: 30px;
-}
-
-.card h4 {
-  font-size: 16px;
-}
-
-.banner #div_erros_login {
-  margin-top: 15px;
-}
-
-button {
-  cursor: pointer;
-}
 
 /* FORMULARIO */
 
@@ -117,7 +44,7 @@ button {
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #e70000 3px solid;
+  border: #39ff14 3px solid;
   padding: 10px;
   margin-right: 10%;
 }
@@ -140,13 +67,13 @@ button {
 .combo_tipo{
   padding: 10px;
   text-align: center;
-  border: 2px solid #32b9cd;
+  border: 2px solid #39ff14;
   border-radius: 10px;
 }
 
 input {
   margin-bottom: 10px;
-  border: 2px solid #32b9cd;
+  border: 2px solid #39ff14;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
@@ -160,7 +87,7 @@ input {
   font-size: 18px;
   padding: 10px 15px;
   color: white;
-  background-color: #e70000;
+  background-color: #39ff14;
   width: 120px;
   align-self: center;
   margin-top: 5px;
@@ -177,112 +104,6 @@ input {
   width: 50px;
 }
 
-/* PAGINA DOS GRÁFICOS */
-
-.janela {
-  display: flex;
-  width: 100vw;
-}
-
-.header-left a {
-  text-decoration: none;
-  color: white;
-}
-
-.header-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  height: 100vh;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
-  /* border: 3px solid pink; */
-}
-
-.dash-right {
-  display: flex;
-  width: 75%;
-  height: fit-content;
-  background-color: #161618;
-  position: relative;
-  top: 0;
-  left: 25%;
-}
-
-.header-left h1 {
-  color: #32b9cd;
-}
-
-.hello {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.hello h3 {
-  color: #e3b062;
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.hello h3 span {
-  font-weight: 800;
-}
-
-.btn-nav {
-  width: 40%;
-  color: white;
-  background-color: #e70000;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-button:hover{
-  background-color: #161618;
-  box-shadow: 3px 2px 1px #e70000;
-}
-
-.btn-nav-white {
-  width: 40%;
-  background-color: white;
-  border: 3px solid #e70000;
-  border-radius: 5px;
-  text-align: center;
-  padding: 2% 5%;
-}
-
-.btn-nav-white h3 {
-  color: #e70000;
-  padding: 0;
-  margin: 0;
-}
-
-.btn-nav h3,
-.btn-logout h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.btn-logout {
-  margin: 0;
-  padding: 0;
-  width: 20%;
-  background-color: #32b9cd;
-  color: white;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px 15px;
-  margin-bottom: 100px;
-  cursor: pointer;
-}
-
 /* pagina extra - simulador */
 .simulador {
   color: white;
@@ -297,9 +118,14 @@ button:hover{
   margin-top: 11%;
   padding: 1%;
   border-radius: 2%;
+  margin-bottom: 3%;
 }
 
 .fundo_sobre p {
   margin-top: 3%;
   font-size: 20px;
+}
+
+.video_vlog{
+  margin-left: 14%;
 }

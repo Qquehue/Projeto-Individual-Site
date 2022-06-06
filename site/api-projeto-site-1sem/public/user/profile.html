@@ -5,56 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-</head>
+    <title>ConstellarYGO | Meu Perfil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/style_forum.css">
+    <link rel="stylesheet" href="css/style_profile.css">
+    <link rel="icon" href="../assets/imgs/mokeymokey.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 
+    <script src="../js/funcoes.js"></script>
+</head>
 <header>
-    <!--header inicio-->
-    <div class="header">
-        <div class="container">
-            <h1 class="titulo">ConstellarYGO</h1>
-            <ul class="navbar">
-                <li>
-                    <a href="./index.html">
-                        Home
-                    </a>
+    <div class="navbar">
+
+        <nav class="navegacao fechar" id="navegacao">
+            <ul class="nav_lista">
+                <span class="fechar_lista" onclick="esconderBarra()"><span class="material-icons">
+                    close
+                    </span></span>
+                <li class="nav_iten">
+                    <a onclick="limparSessao()">Sair</a>
                 </li>
-                <li>
-                    <a href="./simulador.html">Sobre o Fórum</a>
+                <li class="nav_iten">
+                    <a href="index_forum.html">Home</a>
                 </li>
-                <li>|</li>
-                <li>
-                    <a href="./login.html">Login</a>
+                <li class="nav_iten">
+                    <a href="#">Meu Perfil</a>
                 </li>
-                <li class="agora">
-                    <a href="./cadastro.html">Cadastro</a>
+                <li class="nav_iten">
+                    <a href="contador.html">Duelo</a>
                 </li>
+
             </ul>
-        </div>
+
+        </nav>
+        <a href="#" class="icone_barra" id="iconeBarra" onclick="mostrarBarra()"><span class="material-icons">
+            view_week
+            </span></a>
+        <div class="brand"></div>
     </div>
 </header>
 
-<body>
-    <div class="perfil">
-        <div class="foto">
-            <img src="">
+<body onload="validarSessao()">
+
+    <div class="corpo_perfil">
+
+        <div class="esquerda">
+            <div class="foto">
+                <img src="../assets/imgs/mokeymokey.png">
+            </div>
+            <div class="lista_perfil">
+                <div>Como estamos hoje?</div>
+                <div>Nome: <span class="item" id="nome_perfil"></span></div>
+                <div>Email: <span class="item" id="email_perfil"></span></div>
+            </div>
         </div>
-        <div class="lista">
-            <div class="item" id="nome"></div>
-            <div class="item" id="tipo"></div>
-            <div class="item" id="cent"></div>
+    
+    <div class="direita">
+        <div class="texto1">
+            <div class="titulo_grafico">Eventos Próximos!!!</div>
         </div>
-        <div class="legenda">
-            <div class="incrivel"></div>
-            <div class="bom"></div>
-            <div class="mediano"></div>
-            <div class="socorro"></div>
+        <div class="gif">
+            <img src="https://c.tenor.com/v4Uc7G0eKPYAAAAC/yu-gi-oh-yugi-mutou.gif">
         </div>
+        <div class="texto2">
+            <a href="https://yugiohblog.konami.com/br/?p=20220">Clique Aqui para mais detalhes</a>
+        </div>
+    
     </div>
-    <div class="">
-        <div></div>
-    </div>
+
+</div>
+
 </body>
+<footer>
+    <img src="../assets/imgs/ygologo.png">
+    <img src="../assets/imgs/konamilogo.png">
+</footer>
+<script src="../js/funcoes.js"></script>
+<script src="js/script_forum.js"></script>
+
+
 
 </html>

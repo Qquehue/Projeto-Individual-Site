@@ -1,0 +1,34 @@
+.social {
+    display: flex;
+  }
+  
+  .social .container{
+    justify-content: center;
+  }
+  
+  .box img {
+    width: 170px;
+  }
+  
+  .social .container .boxes {
+    display: flex;
+  }
+  
+  .social p {
+    text-align: center;
+  }
+  
+  .box {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .box {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

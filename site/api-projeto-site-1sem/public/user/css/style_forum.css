@@ -1,4 +1,18 @@
 /* global */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #00000042;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #39ff14;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-button{
+    display: none;
+  }
 
 *{
     box-sizing: border-box;
@@ -20,7 +34,7 @@ html{
 }
 
 a{
-    color: rgb(73, 73, 255);
+    color: #4949ff;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -34,35 +48,54 @@ h1{
 /* HOME */
 
 .container{
-    margin: 20px;
-    padding: 5px;
-}
-
-.subforum{
-    margin-top: 20px;
-    background-color: #252525bd;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.subforum_row{
-    display: grid;
-    grid-template-columns: 7% 60% 13% 20%;
-}
-
-.subforum_coluna{
-    padding: 10px;
-    margin: 4px;
-}
-
-.center{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: -8%;
+    padding: 2%;
+    width: 80vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
 }
 
-.subforum_icone{
-    font-size: 45px;
+.cont_titulo{
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    padding: 2%;
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 5vh;
+    color: #39ff14;
+    font-weight: bold;
+}
+
+.titulo_ygo{
+    margin-top: 2%;
+    font-size: 10vh;
+    color: #39ff14;
+    margin-left: 27%;
+}
+
+.cont_titulo div{
+    background-color: #252525bd;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+.container img{
+    height: 30vh;
+}
+
+.container img:hover{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1.15);
+    transition: all 0.7s ease;
+}
+.container img { 
+    transform: scale(1);
+    transition: all 0.4s ease-in-out; 
 }
 
 /* NavBar */
@@ -100,8 +133,10 @@ header{
 }
 
 .nav_iten a:hover{
-    background-color: #7a1ecf;
+    background-color: #39ff14;
+    color: #000;
     box-shadow: 1px 2px 3px #000;
+    cursor: pointer;
 }
 
 .fechar_lista{
@@ -151,9 +186,10 @@ header{
 }
 
 .barra_pesquisa button:hover{
-    background-color: #252525;
+    background-color: #39ff39;
     color: white;
-    box-shadow: 1px 2px 3px blueviolet;
+    box-shadow: 1px 2px 3px #000;
+    color: #000;
 }
 
 .forum_info{
@@ -171,7 +207,7 @@ header{
 footer{
     margin-top: 1%;
     padding: 20px;
-    background-color: #7a1fcf;
+    background-color: #252525bd;
     display: flex;
     justify-content: space-between;
 }

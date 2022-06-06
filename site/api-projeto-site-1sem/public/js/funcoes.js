@@ -12,7 +12,8 @@ function validarSessao() {
         if (h1LoginUsuario != undefined) {
             h1LoginUsuario.innerHTML = email;
         }
-        b_usuario.innerHTML = nome;
+        nome_perfil.innerHTML = nome;
+        email_perfil.innerHTML = email;
 
         // finalizarAguardar();
     } else {

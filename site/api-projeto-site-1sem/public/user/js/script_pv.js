@@ -13,6 +13,9 @@ async function dano(params) {
     
             await new Promise(obtenha => {
                 dano++
+                if (pv1-dano==0) {
+                    logic=pv1-valor;
+                }
                 NumeroP1.innerHTML = `${pv1 - dano}`;
                 setTimeout(obtenha, 1 / 1000)
             })
@@ -29,6 +32,9 @@ async function dano(params) {
 
             await new Promise(obtenha => {
                 dano++
+                if (pv2-dano==0) {
+                    logic=pv2-valor;
+                }
                 NumeroP2.innerHTML = `${pv2 - dano}`;
                 setTimeout(obtenha, 1 / 1000)
             })

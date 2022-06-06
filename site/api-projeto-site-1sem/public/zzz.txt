@@ -1,0 +1,6 @@
+var mySqlConfig = {
+     host: "localhost",
+     user: "aluno",
+     database: "ConstellarYGO",
+     password: "sptech",
+ };
