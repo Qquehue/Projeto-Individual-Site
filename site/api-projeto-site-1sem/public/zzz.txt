@@ -1,6 +1,12 @@
 var mySqlConfig = {
      host: "localhost",
      user: "aluno",
-     database: "ConstellarYGO",
+     database: "Constellar",
      password: "sptech",
  };
+
+
+    host: "localhost",
+    user: "root",
+    database: "Constellar",
+    password: "@C3s$0workbench",

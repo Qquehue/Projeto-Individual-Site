@@ -5,7 +5,7 @@ function parametro() {
     if (sel_player.value=='1') {
 
         if (comparar1>8000) {
-            status_p1.innerHTML = `<span style="color: blue;">Esqueça Tudo</span>`
+            status_p1.innerHTML = `<span style="color: #5b5bfc;">Esqueça Tudo</span>`
         }
         else if (comparar1<7000 && comparar1>=4000) {
             status_p1.innerHTML = `<span style="color: #39ff14;">Tranquilo</span>`
@@ -22,7 +22,7 @@ function parametro() {
     } 
     else if(sel_player.value=='2'){
         if (comparar2>8000) {
-            status_p2.innerHTML = `<span style="color: blue;">Esqueça Tudo</span>`
+            status_p2.innerHTML = `<span style="color: #5b5bfc;">Esqueça Tudo</span>`
         }
         else if (comparar2<7000 && comparar2>=4000) {
             status_p2.innerHTML = `<span style="color: #39ff14;">Tranquilo</span>`
